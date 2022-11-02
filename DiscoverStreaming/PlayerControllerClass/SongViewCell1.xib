@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SongViewCell1" customModule="DiscoverStreaming" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgp-f7-rvQ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artist_img_2" translatesAutoresizingMaskIntoConstraints="NO" id="oEi-yA-pCn">
+                            <rect key="frame" x="8" y="7" width="50" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="jIs-l6-4FE"/>
+                                <constraint firstAttribute="width" constant="50" id="pY5-q2-2C9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FkI-N7-1q7">
+                            <rect key="frame" x="66" y="10" width="161" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znR-fb-YM7">
+                            <rect key="frame" x="66" y="36" width="161" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNK-ci-8nx">
+                            <rect key="frame" x="244" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="FUd-NV-Gqm"/>
+                                <constraint firstAttribute="height" constant="30" id="wbu-MW-rpW"/>
+                            </constraints>
+                            <state key="normal" image="download_icon_bg"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A86-Sq-EKh">
+                            <rect key="frame" x="282" y="15" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="CMM-Ew-npR"/>
+                                <constraint firstAttribute="width" constant="30" id="YZE-xP-UpZ"/>
+                            </constraints>
+                            <state key="normal" image="more_icon"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHe-3g-cQO">
+                            <rect key="frame" x="8" y="64" width="304" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lJq-cw-crj"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="highlightedColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstItem="A86-Sq-EKh" firstAttribute="leading" secondItem="qNK-ci-8nx" secondAttribute="trailing" constant="8" id="0Uy-Oi-L1E"/>
+                        <constraint firstAttribute="trailing" secondItem="NHe-3g-cQO" secondAttribute="trailing" constant="8" id="2LD-X1-MFK"/>
+                        <constraint firstItem="NHe-3g-cQO" firstAttribute="leading" secondItem="kgp-f7-rvQ" secondAttribute="leading" constant="8" id="4Go-dV-4fx"/>
+                        <constraint firstAttribute="bottom" secondItem="qNK-ci-8nx" secondAttribute="bottom" constant="25" id="63m-El-NMK"/>
+                        <constraint firstItem="znR-fb-YM7" firstAttribute="top" secondItem="FkI-N7-1q7" secondAttribute="bottom" constant="5" id="7gu-tt-3Yn"/>
+                        <constraint firstItem="FkI-N7-1q7" firstAttribute="leading" secondItem="oEi-yA-pCn" secondAttribute="trailing" constant="8" id="7kc-f9-OfQ"/>
+                        <constraint firstAttribute="bottom" secondItem="NHe-3g-cQO" secondAttribute="bottom" constant="5" id="CHU-Lo-rsO"/>
+                        <constraint firstItem="A86-Sq-EKh" firstAttribute="top" secondItem="kgp-f7-rvQ" secondAttribute="top" constant="15" id="Ets-Av-pAS"/>
+                        <constraint firstItem="NHe-3g-cQO" firstAttribute="top" secondItem="oEi-yA-pCn" secondAttribute="bottom" constant="5" id="JtY-JZ-1By"/>
+                        <constraint firstItem="oEi-yA-pCn" firstAttribute="top" secondItem="kgp-f7-rvQ" secondAttribute="top" constant="7" id="Quf-E1-HJc"/>
+                        <constraint firstAttribute="trailing" secondItem="A86-Sq-EKh" secondAttribute="trailing" constant="8" id="Uwh-gU-epD"/>
+                        <constraint firstItem="qNK-ci-8nx" firstAttribute="top" secondItem="kgp-f7-rvQ" secondAttribute="top" constant="15" id="WnK-hy-fmC"/>
+                        <constraint firstItem="znR-fb-YM7" firstAttribute="leading" secondItem="oEi-yA-pCn" secondAttribute="trailing" constant="8" id="a8z-k2-rbG"/>
+                        <constraint firstItem="oEi-yA-pCn" firstAttribute="leading" secondItem="kgp-f7-rvQ" secondAttribute="leading" constant="8" id="b6W-Gd-ClT"/>
+                        <constraint firstItem="qNK-ci-8nx" firstAttribute="leading" secondItem="znR-fb-YM7" secondAttribute="trailing" constant="17" id="iZs-Hu-5G3"/>
+                        <constraint firstItem="NHe-3g-cQO" firstAttribute="top" secondItem="znR-fb-YM7" secondAttribute="bottom" constant="10" id="lwD-NY-vBp"/>
+                        <constraint firstItem="qNK-ci-8nx" firstAttribute="leading" secondItem="FkI-N7-1q7" secondAttribute="trailing" constant="17" id="rbV-6N-m4I"/>
+                        <constraint firstItem="FkI-N7-1q7" firstAttribute="top" secondItem="kgp-f7-rvQ" secondAttribute="top" constant="10" id="uIM-HI-tWM"/>
+                        <constraint firstAttribute="bottom" secondItem="A86-Sq-EKh" secondAttribute="bottom" constant="25" id="xjb-sv-0Me"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="kgp-f7-rvQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1B1-Hm-yje"/>
+                <constraint firstItem="kgp-f7-rvQ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ISI-a7-bdj"/>
+                <constraint firstItem="kgp-f7-rvQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KkN-mJ-UmR"/>
+                <constraint firstItem="kgp-f7-rvQ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mhE-H5-EaF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="downloadSong_btn" destination="qNK-ci-8nx" id="rTe-ac-S1H"/>
+                <outlet property="more_btn" destination="A86-Sq-EKh" id="dlc-Yn-kqq"/>
+                <outlet property="song_Artist_Name" destination="znR-fb-YM7" id="Tih-mV-If0"/>
+                <outlet property="song_Name" destination="FkI-N7-1q7" id="7GX-hk-zy0"/>
+                <outlet property="song_img" destination="oEi-yA-pCn" id="XBD-Eo-FV6"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="298.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Artist_img_2" width="62" height="62"/>
+        <image name="download_icon_bg" width="20" height="20"/>
+        <image name="more_icon" width="16" height="4"/>
+    </resources>
+</document>

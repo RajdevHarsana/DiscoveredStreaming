@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SongCornerView" customModule="DiscoverStreaming" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="210"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2T-fQ-Qko">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="210"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Wau-kx-8G3">
+                            <rect key="frame" x="8" y="0.0" width="204" height="204"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzC-3A-mGU">
+                            <rect key="frame" x="16" y="79" width="42.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7PG-rg-IXM">
+                            <rect key="frame" x="16" y="167" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="OrderNewestBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="noP-02-33c"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMb-m3-Reo">
+                            <rect key="frame" x="40" y="169.5" width="29.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbD-Tf-wxF">
+                            <rect key="frame" x="16" y="142" width="38.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZx-bl-BHN">
+                            <rect key="frame" x="157" y="167" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="OrderOldestBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="RZE-yC-eCf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFL-uH-7k6">
+                            <rect key="frame" x="181" y="169.5" width="23" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Views" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVP-xn-Hcg">
+                            <rect key="frame" x="16" y="16" width="40" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dAO-oo-I3m">
+                            <rect key="frame" x="16" y="104" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="RatingHighBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lDu-95-L4S"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKq-P1-sFy">
+                            <rect key="frame" x="40" y="106.5" width="31" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5h-Nq-jPc">
+                            <rect key="frame" x="153" y="108" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="RatingLowBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kso-fw-p9U"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSB-XV-Qur">
+                            <rect key="frame" x="177" y="110.5" width="27" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-lD-fcd">
+                            <rect key="frame" x="16" y="41" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="viewHighBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ie2-Zz-MLE"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdh-Zd-zWK">
+                            <rect key="frame" x="40" y="43.5" width="31" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V03-Xs-cSI">
+                            <rect key="frame" x="153" y="40" width="16" height="22"/>
+                            <state key="normal" image="radio_icon"/>
+                            <connections>
+                                <action selector="viewLowBtnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="II7-bY-aCz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Low" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cm4-00-aaF">
+                            <rect key="frame" x="177" y="42.5" width="27" height="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Wau-kx-8G3" firstAttribute="top" secondItem="X2T-fQ-Qko" secondAttribute="top" id="0gi-MZ-OXK"/>
+                        <constraint firstAttribute="trailing" secondItem="Wau-kx-8G3" secondAttribute="trailing" constant="8" id="2Yw-Vb-SGu"/>
+                        <constraint firstAttribute="trailing" secondItem="eFL-uH-7k6" secondAttribute="trailing" constant="16" id="46J-3u-wFI"/>
+                        <constraint firstItem="eFL-uH-7k6" firstAttribute="leading" secondItem="gZx-bl-BHN" secondAttribute="trailing" constant="8" id="556-PU-6Ke"/>
+                        <constraint firstItem="UzC-3A-mGU" firstAttribute="top" secondItem="J0z-lD-fcd" secondAttribute="bottom" constant="16" id="6S7-ck-cCH"/>
+                        <constraint firstItem="Qdh-Zd-zWK" firstAttribute="centerY" secondItem="J0z-lD-fcd" secondAttribute="centerY" id="7Jo-Ow-NGJ"/>
+                        <constraint firstItem="Cm4-00-aaF" firstAttribute="centerY" secondItem="V03-Xs-cSI" secondAttribute="centerY" id="84z-83-5LU"/>
+                        <constraint firstItem="cVP-xn-Hcg" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="9no-YY-ToZ"/>
+                        <constraint firstItem="7PG-rg-IXM" firstAttribute="top" secondItem="EbD-Tf-wxF" secondAttribute="bottom" constant="8" id="IQN-o8-dHd"/>
+                        <constraint firstItem="Qdh-Zd-zWK" firstAttribute="leading" secondItem="J0z-lD-fcd" secondAttribute="trailing" constant="8" id="JCo-1x-Uvc"/>
+                        <constraint firstItem="tSB-XV-Qur" firstAttribute="leading" secondItem="k5h-Nq-jPc" secondAttribute="trailing" constant="8" id="KIg-ix-a3G"/>
+                        <constraint firstItem="Wau-kx-8G3" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="8" id="QvE-B5-y9g"/>
+                        <constraint firstItem="J0z-lD-fcd" firstAttribute="top" secondItem="cVP-xn-Hcg" secondAttribute="bottom" constant="8" id="RjB-j1-7wU"/>
+                        <constraint firstItem="dAO-oo-I3m" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="SK6-OL-Im0"/>
+                        <constraint firstItem="cVP-xn-Hcg" firstAttribute="top" secondItem="X2T-fQ-Qko" secondAttribute="top" constant="16" id="Ser-Sf-XqP"/>
+                        <constraint firstAttribute="trailing" secondItem="Cm4-00-aaF" secondAttribute="trailing" constant="16" id="XQ2-Tb-StE"/>
+                        <constraint firstItem="gZx-bl-BHN" firstAttribute="top" secondItem="EbD-Tf-wxF" secondAttribute="bottom" constant="8" id="YQH-LK-i73"/>
+                        <constraint firstAttribute="trailing" secondItem="tSB-XV-Qur" secondAttribute="trailing" constant="16" id="YYK-09-hcG"/>
+                        <constraint firstItem="EbD-Tf-wxF" firstAttribute="top" secondItem="dAO-oo-I3m" secondAttribute="bottom" constant="16" id="ZWh-8c-Hef"/>
+                        <constraint firstItem="tSB-XV-Qur" firstAttribute="centerY" secondItem="k5h-Nq-jPc" secondAttribute="centerY" id="clJ-Y5-Vpd"/>
+                        <constraint firstItem="7PG-rg-IXM" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="dPE-NS-gnB"/>
+                        <constraint firstItem="J0z-lD-fcd" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="dUg-dH-bO9"/>
+                        <constraint firstItem="AKq-P1-sFy" firstAttribute="leading" secondItem="dAO-oo-I3m" secondAttribute="trailing" constant="8" id="e1V-3A-aLf"/>
+                        <constraint firstItem="AKq-P1-sFy" firstAttribute="centerY" secondItem="dAO-oo-I3m" secondAttribute="centerY" id="fL5-zN-vpI"/>
+                        <constraint firstItem="WMb-m3-Reo" firstAttribute="leading" secondItem="7PG-rg-IXM" secondAttribute="trailing" constant="8" id="kx4-iN-ofC"/>
+                        <constraint firstAttribute="bottom" secondItem="Wau-kx-8G3" secondAttribute="bottom" constant="6" id="l4O-qy-Hhh"/>
+                        <constraint firstItem="EbD-Tf-wxF" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="oqJ-8i-Uqh"/>
+                        <constraint firstItem="WMb-m3-Reo" firstAttribute="centerY" secondItem="7PG-rg-IXM" secondAttribute="centerY" id="p8R-Zz-QcB"/>
+                        <constraint firstItem="UzC-3A-mGU" firstAttribute="leading" secondItem="X2T-fQ-Qko" secondAttribute="leading" constant="16" id="tsV-aB-oFm"/>
+                        <constraint firstItem="V03-Xs-cSI" firstAttribute="top" secondItem="cVP-xn-Hcg" secondAttribute="bottom" constant="7" id="v4W-ra-61X"/>
+                        <constraint firstItem="dAO-oo-I3m" firstAttribute="top" secondItem="UzC-3A-mGU" secondAttribute="bottom" constant="8" id="vbn-Dk-8jM"/>
+                        <constraint firstItem="Cm4-00-aaF" firstAttribute="leading" secondItem="V03-Xs-cSI" secondAttribute="trailing" constant="8" id="yae-Yk-ByZ"/>
+                        <constraint firstItem="eFL-uH-7k6" firstAttribute="centerY" secondItem="gZx-bl-BHN" secondAttribute="centerY" id="yfM-PU-c6s"/>
+                        <constraint firstItem="k5h-Nq-jPc" firstAttribute="top" secondItem="UzC-3A-mGU" secondAttribute="bottom" constant="12" id="zlc-u2-b2L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.15686274510000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="X2T-fQ-Qko" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="50K-dg-FPa"/>
+                <constraint firstAttribute="bottom" secondItem="X2T-fQ-Qko" secondAttribute="bottom" id="AVF-VU-0ci"/>
+                <constraint firstItem="X2T-fQ-Qko" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ir6-8u-3XL"/>
+                <constraint firstItem="X2T-fQ-Qko" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nwN-iY-WtY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="RatingHighBtn" destination="dAO-oo-I3m" id="TeX-zG-ejW"/>
+                <outlet property="RatingLowBtn" destination="k5h-Nq-jPc" id="CeF-Mu-lAo"/>
+                <outlet property="orderNewwstBtn" destination="7PG-rg-IXM" id="v2W-gD-cRd"/>
+                <outlet property="orderOldestBtn" destination="gZx-bl-BHN" id="HHT-gD-HCB"/>
+                <outlet property="viewHightBtn" destination="J0z-lD-fcd" id="MNf-ya-VNZ"/>
+                <outlet property="viewLowBtn" destination="V03-Xs-cSI" id="fgr-KZ-rDg"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="28.794642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="drop_bg" width="176" height="219"/>
+        <image name="radio_icon" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerViewController" customModule="DiscoverStreaming" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-pJ-d3j">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi2-bq-fCL">
+                            <rect key="frame" x="74" y="8" width="266" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="M6t-ZC-G44"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-aa-83O">
+                            <rect key="frame" x="76" y="36.5" width="264" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmx-zp-5j3">
+                            <rect key="frame" x="348" y="3" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="58" id="LUe-yt-mvw"/>
+                                <constraint firstAttribute="width" constant="58" id="UqV-u1-9Kb"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="play-1"/>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-iy-YC3">
+                            <rect key="frame" x="8" y="3" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="F0Q-xr-hOl"/>
+                                <constraint firstAttribute="height" constant="58" id="fUk-K1-DvZ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Fmx-zp-5j3" secondAttribute="trailing" constant="8" id="1R2-c7-hU8"/>
+                        <constraint firstItem="7Ue-aa-83O" firstAttribute="top" secondItem="Qi2-bq-fCL" secondAttribute="bottom" constant="7.5" id="9Mg-qz-kBf"/>
+                        <constraint firstAttribute="bottom" secondItem="7Ue-aa-83O" secondAttribute="bottom" constant="7" id="BSk-YU-asx"/>
+                        <constraint firstItem="Qi2-bq-fCL" firstAttribute="leading" secondItem="kDB-iy-YC3" secondAttribute="trailing" constant="8" id="NG3-Ef-F7O"/>
+                        <constraint firstItem="Fmx-zp-5j3" firstAttribute="leading" secondItem="Qi2-bq-fCL" secondAttribute="trailing" constant="8" id="Qk1-15-Rxr"/>
+                        <constraint firstItem="Qi2-bq-fCL" firstAttribute="top" secondItem="pvI-pJ-d3j" secondAttribute="top" constant="8" id="Ri0-1y-MYp"/>
+                        <constraint firstItem="kDB-iy-YC3" firstAttribute="leading" secondItem="pvI-pJ-d3j" secondAttribute="leading" constant="8" id="RpA-Rv-dYL"/>
+                        <constraint firstItem="kDB-iy-YC3" firstAttribute="top" secondItem="pvI-pJ-d3j" secondAttribute="top" constant="3" id="Ww9-6i-YES"/>
+                        <constraint firstAttribute="bottom" secondItem="kDB-iy-YC3" secondAttribute="bottom" constant="3" id="hgB-4w-E2G"/>
+                        <constraint firstItem="Fmx-zp-5j3" firstAttribute="top" secondItem="pvI-pJ-d3j" secondAttribute="top" constant="3" id="iBy-ob-dPy"/>
+                        <constraint firstItem="Fmx-zp-5j3" firstAttribute="leading" secondItem="7Ue-aa-83O" secondAttribute="trailing" constant="8" id="nRV-4T-86Q"/>
+                        <constraint firstAttribute="height" constant="64" id="opK-cE-MrY"/>
+                        <constraint firstItem="7Ue-aa-83O" firstAttribute="leading" secondItem="kDB-iy-YC3" secondAttribute="trailing" constant="10" id="u1t-bP-ZA7"/>
+                        <constraint firstAttribute="bottom" secondItem="Fmx-zp-5j3" secondAttribute="bottom" constant="3" id="zgb-jG-9Uz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="pvI-pJ-d3j" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rcd-VE-NJF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pvI-pJ-d3j" secondAttribute="bottom" constant="8" id="TmX-BG-22b"/>
+                <constraint firstItem="pvI-pJ-d3j" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vcs-Yt-Nqt"/>
+                <constraint firstItem="pvI-pJ-d3j" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jbd-mf-tgn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-162.31884057971016" y="-2.6785714285714284"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="play-1" width="51" height="51"/>
+    </resources>
+</document>
